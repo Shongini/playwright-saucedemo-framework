@@ -4,3 +4,4 @@ export class BasePage {
   constructor(protected readonly page: Page) {}
   async navigate(path: string) { await this.page.goto(path); }
 }
+
