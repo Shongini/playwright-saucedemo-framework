@@ -1,0 +1,8 @@
+{
+  "name": "playwright-saucedemo",
+  "version": "1.0.0",
+  "devDependencies": {
+    "@playwright/test": "^1.44.0",
+    "allure-playwright": "^2.15.0"
+  }
+}
