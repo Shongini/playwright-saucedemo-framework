@@ -21,4 +21,4 @@ This document outlines the mandatory standards for generating test cases within 
 - **Reporting:** All tests must be compatible with the configured Allure report reporter.
 
 ## 5. CI/CD Integration
-- Every new feature/test suite MUST be reflected in the GitHub Actions configuration (`.github/workflows/playwright.yml`) if specific triggers or parallelization strategies are needed.
+- **CI/CD is currently disabled.** The project is in a local-first development mode. Workflows in `.github/workflows/` are disabled. Pushes to the remote repository should be performed manually only when requested.
