@@ -8,7 +8,10 @@ export class InventoryPage extends BasePage {
   readonly logoutLink = this.page.locator('#logout_sidebar_link');
 
   async addToCart(itemName: string) {
-    await this.page.locator(`text=${itemName}/..//button`).click();
+    // Find the item container, then the button within it
+    await this.page.locator('.inventory_item', { hasText: itemName })
+      .locator('button')
+      .click();
   }
 
   async logout() {
